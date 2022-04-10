@@ -1,0 +1,110 @@
+.i{
+    display: flex;
+    height: 100vh;
+}
+
+.i-left{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.i-right{
+    flex: 1;
+    -webkit-box-shadow:0px 0px 50px 30px #79d9ec inset;
+-moz-box-shadow:0px 0px 50px 30px #79d9ec inset;
+box-shadow:0px 0px 50px 30px #79d9ec inset;
+/* border-radius:85px  0px 0px 0px ; */
+
+
+-webkit-animation:bounce-in 1s ease 0s 1 normal;
+-moz-animation:bounce-in 1s ease 0s 1 normal;
+-ms-animation:bounce-in 1s ease 0s 1 normal;
+animation:bounce-in 1s ease 0s 1 normal;
+}
+
+@-webkit-keyframes bounce-in {
+0%{ opacity: 0; -webkit-transform: scale(.3); transform: scale(.3); }
+50%{ opacity: 1; -webkit-transform: scale(1.0); transform: scale(1.0); }
+70%{ -webkit-transform: scale(0.9); transform: scale(0.9); }
+100%{ -webkit-transform: scale(1); transform: scale(1); }
+}
+
+@keyframes bounce-in {
+0%{ opacity: 0; transform: scale(.3); }
+50%{ opacity: 1; transform: scale(1.0); }
+70%{ transform: scale(0.9); }
+100%{ transform: scale(1); }
+
+
+}
+
+.i-left-wraper{
+    padding: 50px;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.i-intro{
+    font-size: 30px;
+    font-weight: 300;
+}
+.i-name{
+    font-size: 60px;
+}
+.i-title{
+    height: 60px;
+    overflow: hidden;
+    
+}
+.i-title-wraper{
+    height: 100%;
+    animation: move 10s ease-in-out infinite alternate;
+}
+@keyframes move {
+    25%{
+        transform: translateY(-50px);
+    }
+    50%{
+        transform: translateY(-100px);
+    }
+    75%{
+        transform: translateY(-150px);
+    }
+    100%{
+        transform: translateY(-200px);
+    }
+}
+.i-title-item{
+    height: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #3498db;
+    display: flex;
+    align-items: center;
+}
+.i-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+}
+.i-bg{
+    
+    /* clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%); */
+    /* background-color: #92bdda; */
+    height: 100%;
+    width: 100%;
+    
+}
+.Ahmer{
+    color: #3498db;
+    -webkit-box-shadow:0px 0px 50px 30px #79d9ec ;
+    -moz-box-shadow:0px 0px 50px 30px #79d9ec ;
+    box-shadow:0px 0px 50px 30px #79d9ec ;
+}
